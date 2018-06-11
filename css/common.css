@@ -1,0 +1,61 @@
+@charset "utf-8";  
+
+/*
+Title : common.css
+Author : GRIDA X euniya.H
+*/
+
+/* ========== C O M M O N ========== */
+*{padding:0;margin:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+
+html, body{}
+body{position:relative;font-family:'NotoR', sans-serif;font-size:14px;color:#424242}
+button, textarea, input, select{font-family:'NotoR', sans-serif;font-size:14px}
+.blind{position:absolute;top:-9999em;left:-9999em;display:block;width:1px;height:1px}
+
+/* input_text_style */
+input::-ms-clear{display:none}
+input[type="text"]:disabled{color:#000;background:#f2f2f2;-webkit-text-fill-color:#000;-webkit-opacity:1}
+.itext{height:24px;line-height:24px;font-size:16px;color:#666;border:1px solid #bbb}
+
+/* textarea_style */
+.ttext{font-size:16px;color:#666;padding:10px;border:1px solid #bbb}
+
+/* placeholder */
+::-webkit-input-placeholder {color:#999 !important}
+:-moz-placeholder{color:#999 !important;opacity:1}
+::-moz-placeholder{color:#999 !important;opacity:1}
+:-ms-input-placeholder{color:#999 !important}
+
+/* button_style */
+button[type="button"]:disabled,
+button[type="reset"]:disabled,
+button[type="submit"]:disabled{cursor:default;color:#7d7d7d;background:#e6e6e6;text-shadow:1px 1px #fff;border:1px solid #d2d2d2}
+button{width:100%}
+.btn2_grp::after{content:'';display:block;clear:both}
+.btn2_grp button:first-child{float:left;width:calc(50% - 4px)}
+.btn2_grp button:last-child{float:right;width:calc(50% - 4px)}
+.btn3_grp::after{content:'';display:block;clear:both}
+.btn3_grp button{float:left;width:calc((100% /  3) - 7px);margin-right:10px}
+.btn3_grp button:last-child{margin-right:0}
+
+input[type="checkbox"]{margin:0;padding:0;opacity:0;cursor:pointer}
+input[type="checkbox"].chk + label{display:inline-block;font-size:16px;color:#282828;margin-left:-17px;padding-left:27px;cursor:pointer;background:url(../img/chk_basic.png) no-repeat 0 50%}
+input[type="checkbox"].chk:checked + label{background:url(../img/chk_basic_on.png) no-repeat 0 50%}
+
+/* float */
+.f_l{float:left !important}
+.f_r{float:right !important}
+
+/* text_align */
+.txt_l{text-align:left !important}
+.txt_r{text-align:right !important}
+.txt_c{text-align:center !important}
+
+/* button_align */
+.btn_left{clear:both;text-align:left;font-size:0}
+.btn_right{clear:both;text-align:right;font-size:0}
+.btn_center{clear:both;text-align:center;font-size:0}
+.btn_clear{clear:both;font-size:0}
+.btn_clear_left{float:left;text-align:left}
+.btn_clear_right{text-align:right}
