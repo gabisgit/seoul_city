@@ -60,6 +60,7 @@ header{
 				padding: 0 35px;
 				a{
 					font-size:19px;
+					cursor:pointer;
 				}
 			}
 		}
@@ -92,6 +93,7 @@ header{
 				padding:6px 40px;
 				a:hover{
 					color:#a3acfd;
+					font-weight:400;
 				}
 			}
 			&.menu_1{
